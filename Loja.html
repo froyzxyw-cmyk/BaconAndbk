@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo e Informações | BaconAndBK</title>
+    <style>
+        /* Reset e Estilos Gerais */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        body { 
+            background-color: #0d0e12; 
+            color: #fff; 
+            line-height: 1.6; 
+        }
+        a { 
+            text-decoration: none; 
+            color: inherit; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+        /* Topo da Página */
+        header { 
+            background: linear-gradient(90deg, #1f1c2c 0%, #928dab 100%); 
+            padding: 20px 0; 
+            text-align: center; 
+            border-bottom: 3px solid #00e676; 
+        }
+        header h1 { 
+            font-size: 2rem; 
+            text-transform: uppercase; 
+        }
+        
+        /* Botão Voltar */
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .btn-voltar:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Títulos de Seções */
+        section {
+            margin: 50px 0;
+        }
+        section h2 { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 2rem; 
+            color: #fff; 
+            text-transform: uppercase; 
+        }
+
+        /* Vitrine de Produtos */
+        .catalog-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+        }
+        .catalog-item { 
+            background: #161922; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            border: 1px solid rgba(255,255,255,0.05); 
+            text-align: center; 
+            padding-bottom: 20px; 
+        }
+        .catalog-item img { 
+            width: 100%; 
+            height: 160px; 
+            object-fit: cover; 
+            background: #2a2e3d; 
+        }
+        .catalog-item h3 { 
+            margin: 15px 0 5px 0; 
+            color: #00e676; 
+        }
+        .catalog-item p { 
+            font-size: 0.9rem; 
+            color: #b3b3b3; 
+            padding: 0 15px; 
+            margin-bottom: 15px; 
+        }
+        .price { 
+            font-size: 1.3rem; 
+            font-weight: bold; 
+            color: #fff; 
+            margin-bottom: 15px; 
+        }
+        .buy-btn {
+            display: inline-block;
+            background: #5865F2;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Avaliações */
+        .reviews-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+        }
+        .review-card { 
+            background: #161922; 
+            padding: 20px; 
+            border-radius: 10px; 
+            border-left: 4px solid #00e676; 
+        }
+        .review-card p { 
+            font-style: italic; 
+            color: #d1d1d1; 
+        }
+        .review-user { 
+            margin-top: 10px; 
+            font-weight: bold; 
+            color: #00e676; 
+            font-size: 0.9rem; 
+        }
+
+        /* FAQ (Perguntas Frequentes) */
+        .faq-section { 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        .faq-item { 
+            background: #161922; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin-bottom: 10px; 
+        }
+        .faq-item h4 { 
+            color: #00e676; 
+            margin-bottom: 5px; 
+        }
+        .faq-item p { 
+            color: #b3b3b3; 
+            font-size: 0.95rem; 
+        }
+
+        /* Footer */
+        footer { 
+            text-align: center; 
+            padding: 30px 0; 
+            color: #666; 
+            border-top: 1px solid #161922; 
+            font-size: 0.9rem; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>BaconAndBK - Catálogo</h1>
+            <!-- Link que aponta de volta para a sua página inicial principal -->
+            <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- VITRINE DE PRODUTOS -->
+        <section>
+            <h2>Nossos Serviços e Jogos</h2>
+            <div class="catalog-grid">
+                
+                <div class="catalog-item">
+                    <img src="" alt="[Foto do Jogo / Contas]">
+                    <h3>Contas Blox Fruits</h3>
+                    <p>Contas level max, com raças v4, espadas raras e frutas despertadas prontas para o PVP.</p>
+                    <div class="price">O menor preço do mercado!</div>
+                    <a href="https://discord.gg/RjnsDaWkn" target="_blank" class="buy-btn">Comprar no Discord</a>
+                </div>
+
+                <div class="catalog-item">
+                    <img src="" alt="[Foto do Jogo / Contas]">
+                    <h3>Contas King Legacy</h3>
+                    <p>Contas upadas com itens lendários e ótimos status para você amassar no jogo.</p>
+                    <div class="price">Preço que cabe no bolso!</div>
+                    <a href="https://discord.gg/RjnsDaWkn" target="_blank" class="buy-btn">Comprar no Discord</a>
+                </div>
+
+                <div class="catalog-item">
+                    <img src="" alt="[Foto Up de Contas]">
+                    <h3>Serviço de Up (Farm)</h3>
+                    <p>Não tem tempo para farmar? Nós upamos seu level, pegamos maestria ou itens para você rapidamente.</p>
+                    <div class="price">Consulte valores via Ticket</div>
+                    <a href="https://discord.gg/RjnsDaWkn" target="_blank" class="buy-btn">Abrir Ticket</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AVALIAÇÕES DE CLIENTES -->
+        <section>
+            <h2>Quem já comprou, aprova!</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"Entrega muito rápida, comprei uma conta God Human e veio com tudo que prometeu. Podem confiar rapaziada!"</p>
+                    <div class="review-user">⭐ @GamerRoblox99 (via Discord)</div>
+                </div>
+                <div class="review-card">
+                    <p>"Comprei farm de maestria e entregaram em menos de 1 dia. Dono super gente boa e preço muito justo."</p>
+                    <div class="review-user">⭐ @LucasFrutas (via Discord)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERGUNTAS FREQUENTES -->
+        <section class="faq-section">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-item">
+                <h4>Como funciona a entrega?</h4>
+                <p>A entrega é feita de forma segura via Discord. Assim que o pagamento for confirmado no seu ticket, nossa equipe envia os dados de acesso ou inicia o farm na sua conta.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quais os métodos de pagamento?</h4>
+                <p>Aceitamos Pix, cartão de crédito e as principais formas de pagamento atuais diretamente na nossa comunidade.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Existe risco de recuperação ou ban?</h4>
+                <p>Não. Todas as contas e métodos utilizados pela BaconAndBK passam por testes rigorosos para garantir total segurança e privacidade para o comprador.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BaconAndBK - Todos os direitos reservados.</p>
+            <p>Este site é uma página de divulgação e não possui vínculos com a Roblox Corporation.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
