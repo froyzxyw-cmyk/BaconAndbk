@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaconAndBK | Jogos Upados de Roblox</title>
+    <style>
+        /* Reset e Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0e12;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header / Navbar */
+        header {
+            background: linear-gradient(90deg, #1f1c2c 0%, #928dab 100%);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #00e676;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #00e676;
+            font-weight: bold;
+        }
+
+        /* Seção Hero / Banner */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            margin: 40px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #b3b3b3;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #00e676;
+            color: #000;
+            padding: 15px 35px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 230, 118, 0.7);
+        }
+
+        /* Grid de Redes Sociais / Comunidade */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .social-card {
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Cores das Redes */
+        .discord { background: #5865F2; }
+        .tiktok { background: #010101; border: 1px solid #ff0050; }
+        .youtube { background: #FF0000; }
+
+        .social-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .social-card p {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .social-btn {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .tiktok .social-btn {
+            background: #ff0050;
+            color: #fff;
+        }
+
+        /* Vantagens da Loja */
+        .features {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .features h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: #161922;
+            padding: 25px;
+            border-radius: 8px;
+            border-bottom: 4px solid #00e676;
+        }
+
+        .feature-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #00e676;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            border-top: 1px solid #161922;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .hero h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>BaconAndBK</h1>
+            <p>Contas e Jogos Upados no Roblox pelo Menor Preço!</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Banner Principal (Call to Action) -->
+        <section class="hero">
+            <h2>As Melhores Contas Upadas Estão Aqui!</h2>
+            <p>Blox Fruits, King Legacy, Anime Adventures e muito mais. Entre no nosso servidor do Discord para ver o catálogo atualizado e garantir o seu preço de banana!</p>
+            <!-- Link direto para o Discord -->
+            <a href="https://discord.gg/RjnsDaWkn" target="_blank" class="cta-button">Ver Catálogo no Discord</a>
+        </section>
+
+        <!-- Seção de Redes Sociais -->
+        <section class="social-grid">
+            
+            <!-- CARD DISCORD -->
+            <div class="social-card discord">
+                <h3>Discord</h3>
+                <p>Onde as vendas acontecem! Suporte 24/7, estoque atualizado e sorteios semanais para os membros.</p>
+                <a href="https://discord.gg/RjnsDaWkn" target="_blank" class="social-btn">Entrar no Servidor</a>
+            </div>
+
+            <!-- CARD TIKTOK -->
+            <div class="social-card tiktok">
+                <h3>TikTok</h3>
+                <p>Acompanhe nossos vídeos diários mostrando as contas por dentro, gameplays e novidades da loja!</p>
+                <a href="https://www.tiktok.com/@pokesstudios?_r=1&_t=ZS-97vRx3XdWOD" target="_blank" class="social-btn">Seguir no TikTok</a>
+            </div>
+
+            <!-- CARD YOUTUBE -->
+            <div class="social-card youtube">
+                <h3>YouTube</h3>
+                <p>Inscreva-se para ver showcases completos das contas, tutoriais e comprovações de que somos 100% confiáveis.</p>
+                <a href="https://youtube.com/@baconandbk?si=vqzCVxv9G58Q4APG" target="_blank" class="social-btn">Inscrever-se</a>
+            </div>
+
+        </section>
+
+        <!-- Vantagens da Loja -->
+        <section class="features">
+            <h2>Por que comprar com a gente?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Preço Justo</h4>
+                    <p>O preço mais barato do mercado, que cabe no seu bolso.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Entrega Rápida</h4>
+                    <p>Assim que o pagamento for aprovado, seu produto é entregue.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>100% Seguro</h4>
+                    <p>Veja as referências e avaliações dos clientes no nosso Discord.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BaconAndBK - Todos os direitos reservados.</p>
+            <p>Este site não possui vínculos com a Roblox Corporation.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
